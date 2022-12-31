@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo</title>
+    <link rel="stylesheet" href="meteo.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/ac215d7583.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header><h1>App Météo</h1></header>
+<div class ="container" >
+   <div class="row justify-content-center">
+
+    <!--première colone pour formulaire-->
+    <div class = "col- col-sm my-3">
+        <form >
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputCity"/> <!--saisir la ville-->
+            </div>
+<!--soumettre les formulaires-->
+            <button type="submit" class="btn btn-info btn-block">
+                Recherche
+            </button>
+        </form>
+    </div>
+    <!--créer les 4 carrés -->
+<div class = "col-12 col-sm-6 d-flex justify-content-center my-3">
+    <div class = "box-container"> <!--css pour agir sur 4 carrés-->
+       <div id="city" class="box"></div>
+       <div id="temp" class="box"></div>
+       <div id="humidity" class="box"></div>
+       <div id="wind" class="box"></div>
+
+    </div>
+
+</div>
+   </div>
+
+    </div>
+</div>
+    
+    <script src="meteo.js"></script>
+</body>
+</html>
