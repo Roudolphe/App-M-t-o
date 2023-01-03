@@ -1,12 +1,12 @@
 ////API INFOS
-const APIKEY = '6c5c5d3ee950c3e0c220d733d0d12a19';
+const APIKEY = 'votre API';
 // manipulation du DOM
 
 //appel api avec ville en paramètre
 
 let appelapi = function(city){
 	let url = 
-`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metricl&appid=6c5c5d3ee950c3e0c220d733d0d12a19&lang=fr`;
+`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metricl&appid=votre API&lang=fr`;
 
 fetch(url)
   .then((response) => 
